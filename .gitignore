@@ -1,0 +1,10 @@
+# Sublime Text files
+*.sublime-*
+sftp-config.json
+
+# Package Manager files
+node_modules/
+bower_components/
+
+# Any logs
+**.log

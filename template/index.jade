@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title FundPlaces
+    link(rel="stylesheet" href="css/style.css")
+  body
+    nav.navbar
+      .container
+        .navbar--header
+          .navbar--toggle.collapsed(data-toggle="collapse" data-target=".navbar--collapse")
+            span.sr-only Toggle navigation
+            each val in [1, 2, 3]
+              span.toggle-bar
+          a.navbar--brand(href="javascript:;")
+            span.sr-only FundPlaces
+            img(src="images/fundplaces.png" height="40px")
+
+        .navbar--collapse.collapse
+          ul.navbar--nav
+            each val, i in ['Deals', 'Companies', 'How it works', 'About', 'Education', 'Login']
+              li(class=i == 5 ? 'active' : ''): a(href="javascript:;")= val
+
+    section.main
+      .slider
+        .slider--item.item__1
+      .container
+        .hero
+          h1.hero--title
+            | Invest In <br> Properties Like <br> The Belle Apartments.
+          p.hero--lead.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          .hero--promo-block
+            .hero--promo-item
+              h4.promo--title Terms
+              p.promo--content
+                | <big>34</big> months
+            .hero--promo-item
+              h4.promo--title Interest Rate
+              p.promo--content
+                | <big>15</big> %
+            .hero--promo-item
+              h4.promo--title Offering type
+              p.promo--content
+                | Preferred Equity
+          .hero--action
+            .hero--action__invest Invest Now
+            .hero--action__more Learn More
+          ul.hero--list
+            li Duis aute irure dolor in reprehenderit in voluptate.
+            li Velit esse cillum dolore eu fugiat nulla pariatur.
+            li Excepteur sint occaecat cupidatat non proident.
+            li Sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    footer.footer
+      .container
+        .footer--phone
+          .phone--caption
+            strong Need help?
+            |  Just call us at
+          .phone--number +65 6534 3564
+        .footer--sitenav
+          h3.sr-only Links
+          .footer--sitenav-item
+            h4.sitenav--title Company
+            ul.sitenav--list
+              each val in ['About', 'Team']
+                li: a(href="javascript:;")= val
+          .footer--sitenav-item
+            h4.sitenav--title Raise Capital
+            ul.sitenav--list
+              each val in ['Build Your Network', 'Get Started']
+                li: a(href="javascript:;")= val
+          .footer--sitenav-item
+            h4.sitenav--title Legal Support
+            ul.sitenav--list
+              each val in ['FAQ', 'Terms of Use', 'Privacy Policy', 'Contact Us']
+                li: a(href="javascript:;")= val
+          .footer--sitenav-item
+            h4.sitenav--title Social
+            ul.sitenav--list
+              each val in ['Blog', 'LinkedIn', 'Facebook', 'Twitter']
+                li: a(href="javascript:;")= val
+        .footer--copyright Copyright &copy; 2014 FundPlaces Pte Ltd. All rights reserverd.
+
+    script(src="js/core.min.js")
+
