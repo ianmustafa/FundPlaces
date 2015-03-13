@@ -17,22 +17,16 @@ run this project. After installing the dependencies, you are good to go.
 
 ### Clone ###
 ```
-#!command
-
 git clone https://bitbucket.org/cuplizian/fundplaces.git fundplaces
 ```
 
 ### Install dependencies ###
 ```
-#!command
-
 npm install
 ```
 
 ### Run server ###
 ```
-#!command
-
 npm start
 ```
 
