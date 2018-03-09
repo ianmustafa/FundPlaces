@@ -6,5 +6,9 @@ sftp-config.json
 node_modules/
 bower_components/
 
+# OS-related files
+Thumbs.dv
+.DS_Store
+
 # Any logs
 **.log
