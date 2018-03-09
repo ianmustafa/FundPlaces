@@ -7,7 +7,7 @@ node_modules/
 bower_components/
 
 # OS-related files
-Thumbs.dv
+Thumbs.db
 .DS_Store
 
 # Any logs
